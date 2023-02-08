@@ -13,7 +13,7 @@ code . # Open this folder in your text editor
 ## Goal
 
 - Disable a button
-- ...
+- Use Stimulus with fetch - OMDBApi
 
 
 ## Specs
