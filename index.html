@@ -19,19 +19,24 @@
   </head>
 
   <body>
-    <div class="container text-center mt-5">
+    <div class="container text-center mt-5" data-controller="disable-button">
       <h1>Stimulus JS</h1>
       <div class="row">
         <div class="col-12 pt-1">
           <button class="btn btn-primary btn-lg"
                   id="click-me"
-                  data-controller="disable-button"
-                  data-action="click->disable-button#disable">
+                  data-action="click->disable-button#disable"
+                  data-disable-button-target="button"
+                  >
             Click me!
           </button>
+          <a  href="#"
+              class="d-none ms-2"
+              data-disable-button-target="link"
+              data-action="click->disable-button#reset"
+          >Reset</a>
         </div>
       </div>
-
       <!-- Remove the `d-none` when you want to display the form -->
       <div class="col-12 d-none">
         <form class="row g-2 justify-content-center py-5">
